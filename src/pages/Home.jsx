@@ -161,7 +161,7 @@ const Home = () => {
               <div className="absolute inset-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-2xl animate-pulse delay-150"></div>
               
               <img
-  src="/src/images/thaheshan.jpeg"
+  src="/src/images/local.jpeg"
   alt="Thaheshan Suresh"
   className="relative rounded-full w-full h-full object-cover border-4 border-white/10 shadow-2xl"
 />
