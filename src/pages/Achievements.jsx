@@ -72,7 +72,7 @@ const achievements = [
   },
   {
     date: "2024",
-    title: "IET Stnading Committe Lead 24/25",
+    title: "IET Standing Committe Lead 24/25",
     organization: "IET",
     description: "Received recognition for being the lead of the IET Standing Committee on finance, editorial and organizing"
    
