@@ -29,7 +29,7 @@ const Home = () => {
 
   const stats = [
     { icon: FaCode, label: "Projects Completed", value: "10+" },
-    { icon: FaAward, label: "Awards Won", value: "5+" },
+    { icon: FaAward, label: "Awards Won", value: "8+" },
     { icon: FaLaptopCode, label: "Technologies", value: "20+" }
   ];
 
