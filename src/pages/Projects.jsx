@@ -39,7 +39,7 @@ const projects = [
     title: "Healthify",
     description: "Built a Ui/Ux design using figma platform for manage user healthy habits.",
     technologies: ["Figma"],
-    link: "#"
+    link: "#EERfv"
   },
 
   {

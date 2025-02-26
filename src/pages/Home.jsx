@@ -162,7 +162,7 @@ const Home = () => {
               
               <img
   src="/public/images/thaheshan.jpeg"
-  alt="Thaheshan Suresh.................................."
+  alt="Thaheshan Suresh.."
   className="relative rounded-full w-full h-full object-cover border-4 border-white/10 shadow-2xl"
 />
 
