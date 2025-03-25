@@ -33,8 +33,17 @@ const Home = () => {
     { icon: FaLaptopCode, label: "Technologies", value: "20+" }
   ];
 
+  const handleCVDownload = () => {
+    const link = document.createElement('a');
+    link.href = 'https://drive.google.com/drive/folders/1-YkQniMStHkihsoTPnb3WStBFscTNgGm';
+    link.download = 'Thaheshan_Suresh_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen bg-black text-white">
       {/* Background Animation */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute w-[500px] h-[500px] bg-purple-500/20 rounded-full blur-3xl -top-48 -right-48 animate-pulse"></div>
@@ -48,6 +57,7 @@ const Home = () => {
           initial="hidden"
           animate="visible"
         >
+          {/* Left Side Content */}
           <motion.div 
             className="order-2 md:order-1 text-left"
             variants={containerVariants}
@@ -60,7 +70,7 @@ const Home = () => {
             </motion.div>
 
             <motion.h1 
-              className="text-5xl md:text-7xl font-bold mb-6 gradient-text"
+              className="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500"
               variants={itemVariants}
             >
               Thaheshan Suresh
@@ -93,12 +103,13 @@ const Home = () => {
                   whileHover={{ scale: 1.05 }}
                 >
                   <stat.icon className="text-2xl mb-2 mx-auto" />
-                  <div className="text-2xl font-bold gradient-text">{stat.value}</div>
+                  <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">{stat.value}</div>
                   <div className="text-sm text-gray-400">{stat.label}</div>
                 </motion.div>
               ))}
             </motion.div>
 
+            {/* Social Icons */}
             <motion.div 
               className="flex gap-4 mb-8 flex-wrap"
               variants={itemVariants}
@@ -106,12 +117,10 @@ const Home = () => {
               {[
                 { icon: FaGithub, link: "https://github.com/thaheshan", label: "GitHub", color: "hover:text-purple-400" },
                 { icon: FaLinkedin, link: "https://www.linkedin.com/in/thaheshan-suresh0911/", label: "LinkedIn", color: "hover:text-blue-400" },
-                { icon: FaInstagram, link: "https://twitter.com/yourusername", label: "Twitter", color: "hover:text-sky-400" },
+                { icon: FaInstagram, link: "https://instagram.com/thaheshan", label: "Instagram", color: "hover:text-pink-400" },
                 { icon: FaMedium, link: "https://medium.com/@mthalapathy549", label: "Medium", color: "hover:text-green-400" },
-                { icon: FaEnvelope, link: "mailto:thaheshanmanithan@gmail.com", label: "Email", color: "hover:text-red-400" }
-
-
-              ].map((social, index) => (
+                { icon: FaEnvelope, link: "thaheshan09@gmail.com", label: "Email", color: "hover:text-red-400" }
+              ].map((social) => (
                 <motion.a
                   key={social.label}
                   href={social.link}
@@ -126,17 +135,18 @@ const Home = () => {
               ))}
             </motion.div>
 
+            {/* Action Buttons */}
             <motion.div 
               className="flex flex-wrap gap-4"
               variants={itemVariants}
             >
-              <Link
-                to="/projects"
+              <button
+                onClick={handleCVDownload}
                 className="group px-8 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-full font-medium relative overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
               >
                 <span className="absolute inset-0 bg-white/20 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></span>
                 <span className="relative">My CV</span>
-              </Link>
+              </button>
               <Link
                 to="/contact"
                 className="px-8 py-3 border-2 border-white/20 text-white rounded-full font-medium hover:bg-white hover:text-black transition-all group relative overflow-hidden"
@@ -147,6 +157,7 @@ const Home = () => {
             </motion.div>
           </motion.div>
 
+          {/* Right Side Image */}
           <motion.div 
             className="order-1 md:order-2 relative"
             variants={itemVariants}
@@ -156,19 +167,18 @@ const Home = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              {/* Multiple gradient layers for depth */}
+              {/* Gradient Backgrounds */}
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500/30 to-blue-500/30 rounded-full blur-3xl animate-pulse"></div>
               <div className="absolute inset-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-2xl animate-pulse delay-150"></div>
               
-             {/* addedpath */}
+              {/* Profile Image */}
               <img
-  src="/images/thaheshan.jpeg"
-  alt="Thaheshan Suresh"
-  className="relative rounded-full w-full h-full object-cover border-4 border-white/10 shadow-2xl"
-/>
+                src="/images/thaheshan.jpeg"
+                alt="Thaheshan Suresh"
+                className="relative rounded-full w-full h-full object-cover border-4 border-white/10 shadow-2xl"
+              />
 
-
-              {/* Rotating borders */}
+              {/* Rotating Borders */}
               <motion.div
                 className="absolute -inset-4 border-2 border-purple-500/20 rounded-full"
                 animate={{ rotate: 360 }}
@@ -181,7 +191,7 @@ const Home = () => {
               />
             </motion.div>
 
-            {/* Tech stack pills */}
+            {/* Tech Stack Pills */}
             <motion.div
               className="absolute -right-4 top-1/4 transform rotate-12"
               whileHover={{ scale: 1.1 }}
