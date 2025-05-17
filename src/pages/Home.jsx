@@ -38,9 +38,9 @@ const Home = () => {
   };
 
   const stats = [
-    { icon: FaCode, label: 'Projects Completed', value: '10+' },
+    { icon: FaCode, label: 'Projects Completed', value: '30+' },
     { icon: FaAward, label: 'Awards Won', value: '8+' },
-    { icon: FaLaptopCode, label: 'Technologies', value: '20+' }
+    { icon: FaLaptopCode, label: 'Technologies', value: '25+' }
   ];
 
   const handleCVDownload = () => {
