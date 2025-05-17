@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-black/20 backdrop-blur-lg">
+    <nav className="relative w-full z-50 bg-black/30 backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="text-white text-xl font-bold">
@@ -25,29 +25,27 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="flex items-center space-x-4">
-              {links.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  className={`nav-link text-sm font-medium ${
-                    location.pathname === link.path
-                      ? 'text-white'
-                      : 'text-gray-300 hover:text-white'
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
+          <div className="hidden md:flex items-center space-x-6">
+            {links.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`text-sm font-medium transition-colors ${
+                  location.pathname === link.path
+                    ? 'text-white'
+                    : 'text-gray-300 hover:text-white'
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
 
-          {/* Mobile Navigation Button */}
+          {/* Mobile Navigation Toggle Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white p-2"
+              className="text-white p-2 focus:outline-none"
             >
               {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>
@@ -61,24 +59,22 @@ const Navbar = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="md:hidden bg-black/95 backdrop-blur-lg"
+          className="md:hidden bg-black/90 backdrop-blur-lg px-4 pt-4 pb-6 space-y-2"
         >
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            {links.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  location.pathname === link.path
-                    ? 'text-white bg-gray-900'
-                    : 'text-gray-300 hover:text-white hover:bg-gray-700'
-                }`}
-                onClick={() => setIsOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
+          {links.map((link) => (
+            <Link
+              key={link.path}
+              to={link.path}
+              onClick={() => setIsOpen(false)}
+              className={`block w-full px-4 py-3 rounded-md text-base font-medium transition ${
+                location.pathname === link.path
+                  ? 'text-white bg-gray-800'
+                  : 'text-gray-300 hover:text-white hover:bg-gray-700'
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
         </motion.div>
       )}
     </nav>
