@@ -231,20 +231,7 @@ const Home = () => {
             ease: "easeInOut"
           }}
         >
-          <div className="text-white/50 text-sm">Scroll to explore</div>
-          <div className="w-1 h-8 bg-white/20 mx-auto mt-2 rounded-full">
-            <motion.div 
-              className="w-full h-1/2 bg-gradient-to-b from-purple-500 to-blue-500 rounded-full"
-              animate={{
-                y: [0, 16, 0],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-            />
-          </div>
+      
         </motion.div>
       </div>
     </div>
