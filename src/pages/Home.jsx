@@ -122,7 +122,7 @@ const Home = () => {
                 { icon: FaGithub, link: 'https://github.com/thaheshan', label: 'GitHub', color: 'hover:text-purple-400' },
                 { icon: FaLinkedin, link: 'https://www.linkedin.com/in/thaheshan-suresh0911/', label: 'LinkedIn', color: 'hover:text-blue-400' },
                 { icon: FaInstagram, link: 'https://instagram.com/thaheshan', label: 'Instagram', color: 'hover:text-pink-400' },
-                { icon: FaMedium, link: 'https://medium.com/@mthalapathy549', label: 'Medium', color: 'hover:text-green-400' },
+                { icon: FaMedium, link: 'https://medium.com/@suresh.20232859', label: 'Medium', color: 'hover:text-green-400' },
                 { icon: FaEnvelope, link: 'mailto:thaheshan09@gmail.com', label: 'Email', color: 'hover:text-red-400' }
               ].map((social) => (
                 <motion.a
