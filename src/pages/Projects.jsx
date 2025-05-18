@@ -12,41 +12,41 @@ const projects = [
     link: "https://vitisco.netlify.app/"
   },
   {
-    title: "Real-time Ticket Booking System",
-    description: "Built a full-stack Ticket Management System For Vendor And Customers for their ticket retreival and ticket purchases with using oop concepts  with Spring Boot and Angular framework.",
-    technologies: ["Spring Boot", "Angular", "PostgreSQL"],
-    link: "#"
+    title: "Real-time Movie Review System",
+    description: "Integrated a real-time Movie API to dynamically fetch and render movie data, enabling users to explore and review films effortlessly, while focusing on clean layouts, responsive design, and intuitive navigation to enhance user experience.",
+    technologies: ["React", "Javascript", "API"],
+    link: "https://moviereviewexploreroffocoal.netlify.app/"
   },
   {
     title: "Breast Cancer Predicting Model",
-    description: "Built a multimodel predicting ystem using R.",
-    technologies: ["Python", "R", "TensorFlow"],
-    link: "#"
+    description: "Developed a Machine Learning-based Predictive Model to estimate breast cancer patient survival by integrating multimodal clinical data, including cancer stage, demographics, and pathological features.Built an Interactive Interface that enables real-time survival predictions with model explainability, aimed at supporting clinical decision-making and enhancing early prognosis, especially in low-resource healthcare settings.",
+    technologies: ["Python", "Machine Learning"],
+    link: "https://github.com/thaheshan/Breast_Cancer_Prediction_Model"
   },
   {
-    title: "EcoShift",
+    title: "EcoShift prototype",
     description: "Built a Ui/Ux design using figma platform for a better eco-friendly system.",
     technologies: ["Figma"],
-    link: "#"
+    link: "https://github.com/thaheshan/ECO-SHIFT"
   },
   {
-    title: "VITISCO",
-    description: "Built a Ui/Ux design using figma platform for language learninf for deaf individuals.",
+    title: "VITISCO Prototype",
+    description: "Built a Ui/Ux design using figma platform for language learning for deaf individuals.",
     technologies: ["Figma"],
-    link: "#"
+    link: "https://github.com/thaheshan/vitisco_prototype"
   },
   {
-    title: "Healthify",
+    title: "Mentora prototype",
     description: "Built a Ui/Ux design using figma platform for manage user healthy habits.",
     technologies: ["Figma"],
-    link: "#EERfv"
+    link: "https://github.com/thaheshan/MENTORA"
   },
 
   {
-    title: "Real-time Student Management System",
-    description: "Built a student and staff records Management System For managing their recors and module details with using oop concepts and java core fundamentals   with Java and React.",
-    technologies: ["Java", "React", "SQL"],
-    link: "#"
+    title: "SMART TOUCH PC",
+    description: "Developed a React and Node.js-based web application for SmartTouch PC From Our Startup Company, enabling seamless product management, secure checkout, and efficient order tracking with an intuitive user experience.",
+    technologies: ["Java Script", "React", "node js", "Express .js"],
+    link: "https://smtlap.netlify.app/"
   },
   // Add more projects as needed
 ];
