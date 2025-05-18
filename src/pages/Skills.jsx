@@ -4,17 +4,30 @@ import { motion } from 'framer-motion';
 const skillCategories = [
   {
     name: "Programming Languages",
-    skills: ["Python", "Java", "HTML", "CSS", "JavaScript", "Kotlin", "PHP"]
+    skills: ["Python", "Java", "HTML", "CSS", "JavaScript", "TypeScript", "PHP", "R"]
   },
   {
     name: "Frameworks & Libraries",
-    skills: ["React", "Node.js", "Spring Boot", "Angular", "Flutter"]
+    skills: [
+      "React", "React Native", "Node.js", "Express.js", "Next.js", 
+      "Spring Boot", "Angular", "Flutter", 
+      "Laravel", "JavaFX", "JAX-RS", 
+      "TensorFlow", "Keras", "PyTorch", "Scikit-learn", 
+      "OpenCV", "Matplotlib"
+    ]
   },
   {
     name: "Tools & Technologies",
-    skills: ["Git", "Docker", "Figma", "AWS", "TensorFlow"]
+    skills: [
+      "Git", "GitHub", "Jenkins", "GitLab CI", 
+      "Docker", "Figma", "Adobe XD", 
+      "MySQL", "MongoDB", 
+      "Postman", "Selenium", "TestNG", "Appium", 
+      "AWS", "Google Cloud"
+    ]
   }
 ];
+
 
 const SkillBar = ({ name }) => (
   <div className="mb-4">
