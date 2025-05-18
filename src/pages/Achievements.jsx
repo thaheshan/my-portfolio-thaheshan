@@ -95,13 +95,13 @@ const achievements = [
     date: "2025",
     title: "TBA",
     organization: "Interfacex 2025",
-    description: "TBA"
+    description: "Selected for Seminfinals"
   },
   {
     date: "2025",
-    title: "TBA",
+    title: "Certificate of Participation",
     organization: "Hult Prize 2025",
-    description: "TBA"
+    description: "Selected for Qualifiers"
   },
   // Add more achievements as needed
 ];
