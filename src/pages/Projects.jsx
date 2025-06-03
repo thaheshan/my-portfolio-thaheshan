@@ -43,7 +43,7 @@ const projects = [
   },
     {
     title: "Smart Touch PC prototype",
-    description: "Developed a prototype for SmartTouch PC From Our Startup Company, enabling seamless product management, secure checkout, and efficient order tracking with an intuitive user experience.",
+    description: "Developed a prototype for SmartTouch PC for freelancing, enabling seamless product management, secure checkout, and efficient order tracking with an intuitive user experience.",
     technologies: ["Figma"],
     link: "https://www.figma.com/design/RiaHZ44N5k5EFUdT1g5mgp/smart-tocuh-pc-prototype?node-id=0-1&t=fpp7YrYTr6Zmunpd-1"
   },
@@ -56,7 +56,7 @@ const projects = [
 
   {
     title: "SMART TOUCH PC",
-    description: "Developed a React and Node.js-based web application for SmartTouch PC From Our Startup Company, enabling seamless product management, secure checkout, and efficient order tracking with an intuitive user experience.",
+    description: "Developed a React and Node.js-based web application for SmartTouch PC for freelancing, enabling seamless product management, secure checkout, and efficient order tracking with an intuitive user experience.",
     technologies: ["Java Script", "React", "node js", "Express .js"],
     link: "https://smtlap.netlify.app/home"
   },
