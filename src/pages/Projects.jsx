@@ -9,7 +9,7 @@ const projects = [
 
     technologies: ["Python", "TensorFlow", "React Native", "Node.js"],
 
-    link: "https://vitisco.netlify.app/"
+    link: "https://vitisco-marketing-page-org.vercel.app/"
   },
   {
     title: "Real-time Movie Review System",
@@ -26,27 +26,39 @@ const projects = [
   {
     title: "EcoShift prototype",
     description: "Built a Ui/Ux design using figma platform for a better eco-friendly system.",
-    technologies: ["Figma"],
-    link: "https://github.com/thaheshan/ECO-SHIFT"
+    technologies: ["Figma", "photoshop"],
+    link: "https://www.figma.com/design/33Vw2suKUoLQvhVHi1fiqY/ecoshift?node-id=0-1&t=nM3lB6NatRUHThND-1"
   },
   {
     title: "VITISCO Prototype",
     description: "Built a Ui/Ux design using figma platform for language learning for deaf individuals.",
-    technologies: ["Figma"],
-    link: "https://github.com/thaheshan/vitisco_prototype"
+    technologies: ["Figma" , "photoshop" , "Adobe Illustrator", "Blender"],
+    link: "https://www.figma.com/design/9cA69Qg0yikJOOK4AbVfIx/VITISCO?node-id=0-1&t=CYzX2VZKi0m0Q91k-1"
   },
   {
     title: "Mentora prototype",
     description: "Built a Ui/Ux design using figma platform for manage user healthy habits.",
-    technologies: ["Figma"],
+    technologies: ["Figma", "Adobe Illustrator"],
     link: "https://github.com/thaheshan/MENTORA"
+  },
+    {
+    title: "Smart Touch PC prototype",
+    description: "Developed a prototype for SmartTouch PC From Our Startup Company, enabling seamless product management, secure checkout, and efficient order tracking with an intuitive user experience.",
+    technologies: ["Figma"],
+    link: "https://www.figma.com/design/RiaHZ44N5k5EFUdT1g5mgp/smart-tocuh-pc-prototype?node-id=0-1&t=fpp7YrYTr6Zmunpd-1"
+  },
+    {
+    title: "Travelathon prototype",
+    description: "Built a Ui/Ux design using figma platform for a competition for better travelling partner.",
+    technologies: ["Figma", "Aobe Illustrator","Photoshop"],
+    link: "https://www.figma.com/design/eQqADu77zVDIRMbn6VON9F/Traveathon?node-id=0-1&t=fbQejY5o7TkA5OL7-1"
   },
 
   {
     title: "SMART TOUCH PC",
     description: "Developed a React and Node.js-based web application for SmartTouch PC From Our Startup Company, enabling seamless product management, secure checkout, and efficient order tracking with an intuitive user experience.",
     technologies: ["Java Script", "React", "node js", "Express .js"],
-    link: "https://smtlap.netlify.app/"
+    link: "https://smtlap.netlify.app/home"
   },
   // Add more projects as needed
 ];
