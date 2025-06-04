@@ -39,7 +39,7 @@ const projects = [
     title: "Mentora prototype",
     description: "Built a Ui/Ux design using figma platform for manage user healthy habits.",
     technologies: ["Figma", "Adobe Illustrator"],
-    link: "https://github.com/thaheshan/MENTORA"
+    link: "https://www.figma.com/design/wfhjxIPtSn49qxq5q8EbEx/Interfacex?node-id=0-1&t=UMlxHPNETlFhkrWY-1"
   },
     {
     title: "Smart Touch PC prototype",
